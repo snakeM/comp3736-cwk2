@@ -91,6 +91,6 @@ func handleResultData(c *gin.Context) {
 
 func main() {
 	r := gin.Default()
-	r.POST("/result", handleResultData)
+	r.POST("/result/new", handleResultData)
 	r.Run()
 }
