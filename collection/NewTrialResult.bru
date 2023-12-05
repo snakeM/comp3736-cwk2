@@ -1,0 +1,32 @@
+meta {
+  name: NewTrialResult
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/result
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "data": [
+      {
+        "id": "1",
+        "chart": "line",
+        "trial": "2",
+        "timeTaken": "1224.23",
+        "answer": "USA"
+      },
+      {
+        "id": "2",
+        "chart": "area",
+        "trial": "2",
+        "timeTaken": "3367.90",
+        "answer": "UK"
+      }
+    ]
+  }
+}
