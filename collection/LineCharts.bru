@@ -1,0 +1,23 @@
+meta {
+  name: LineCharts
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://{{hostname}}:8080/charts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "label": "USA",
+    "data": [
+      20.00,
+      30.00,
+      20.00,
+      50.00
+    ],
+  }
+}
