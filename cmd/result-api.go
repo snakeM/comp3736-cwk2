@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
@@ -94,7 +95,7 @@ func generateRandNum(min int, max int) int {
 
 func generateRandData(n int) []int {
 	max := 50
-	min := 0
+	min := 20
 
 	var randData = make([]int, n)
 	for i := 0; i < n; i++ {
@@ -104,27 +105,52 @@ func generateRandData(n int) []int {
 	return randData
 }
 
-func generateRandLine() []LineChart {
+func generateDatasets() ([]chartDataset, []chartDataset) {
 	countries := []string{"USA", "Belgium", "Great Britain", "Spain", "Italy", "France", "Greece", "Japan"}
-	datasets := make([]LineChart, len(countries))
+	lineDatasets := make([]chartDataset, len(countries))
+	areaDatasets := make([]chartDataset, len(countries))
 	for i, country := range countries {
-		datasets[i] = LineChart{Label: country, Data: generateRandData(12)}
+		data := generateRandData(12)
+		lineDatasets[i] = chartDataset{Label: country, Data: data, Fill: false}
+		areaDatasets[i] = chartDataset{Label: country, Data: data, Fill: true}
 	}
-	return datasets
+	return lineDatasets, areaDatasets
 }
 
 func generateDataset(c *gin.Context) {
-	var allLineData Charts
-
-	dateLabels := []string{"1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"}
-	allLineData.LineCharts = make([]LineData, 10)
+	dates := []string{"1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"}
+	
+	var allTrials trials
+	allTrials.Trials = make([]trial, 20)
+	questions := []string{"Which country won the most medals in 2000"}
 	for i := 0; i < 10; i++ {
-		allLineData.LineCharts[i] = LineData{
-			Labels: dateLabels,
-			Datasets: generateRandLine(),
+		lineDataset, areaDataset := generateDatasets()
+
+		lineTrial := trial{
+			Id: i,
+			Question: questions[0],
+			Answers: []string{"USA", "Great Britain", "Spain", "Greece"},
+			Chart: chart{
+				Labels: dates,
+				Datasets: lineDataset,
+			},
 		}
+		areaTrial := trial{
+			Id: i,
+			Question: questions[0],
+			Answers: []string{"USA", "Great Britain", "Spain", "Greece"},
+			Chart: chart{
+				Labels: dates,
+				Datasets: areaDataset,
+			},
+		}
+		allTrials.Trials[i] = lineTrial
+		allTrials.Trials[10+i] = areaTrial
+
 	}
-	c.JSON(http.StatusOK, allLineData)
+	fmt.Println(allTrials)
+	c.JSON(http.StatusOK, allTrials)
+
 }
 
 func getChartData(c *gin.Context) {
@@ -136,19 +162,19 @@ func getChartData(c *gin.Context) {
 	c.JSON(http.StatusOK, lineData)
 }
 
-func ReadJSONFile(filePath string) (Charts, error) {
+func ReadJSONFile(filePath string) (trials, error) {
 	
 	file, err := os.Open(filePath)
 	if err != nil {
-		return Charts{nil}, err
+		return trials{nil}, err
 	}
 	defer file.Close()
 
-	var jsonData Charts
+	var jsonData trials
 	decoder := json.NewDecoder(file)
 	err = decoder.Decode(&jsonData)
 	if err != nil {
-		return Charts{nil}, err
+		return trials{nil}, err
 	}
 
 	return jsonData, nil
