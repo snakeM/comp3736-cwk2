@@ -43,7 +43,7 @@ type trial struct {
 	Id int `json:"id"`
 	Question string `json:"questions"`
 	Answers []string `json:"answers"`
-	Chart []chart `json:"chart"`
+	Chart chart `json:"chart"`
 }
 
 type trials struct {
