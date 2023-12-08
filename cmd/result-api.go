@@ -101,7 +101,6 @@ func generateRandData(n int) []int {
 		randData[i] = generateRandNum(min, max)
 	}
 
-
 	return randData
 }
 
