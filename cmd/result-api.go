@@ -85,8 +85,8 @@ func generateRandNum(min int, max int) int {
 }
 
 func generateRandData(n int, seed int) []int {
-	var min int = 5 * (seed + 1)
-	var max int = 15 * (seed + 1)
+	var min int = 10 * (2*seed + 1)
+	var max int = 20 * (2*seed + 1)
 
 	var randData = make([]int, n)
 	for i := 0; i < n; i++ {
