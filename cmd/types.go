@@ -13,7 +13,6 @@ type RequestData struct {
 	Data []ResultRecord `json:"data"`
 }
 
-
 type chartDataset struct {
 	Label string `json:"label"`
 	Data []int `json:"data"`
@@ -27,7 +26,7 @@ type chart struct {
 
 type trial struct {
 	Id int `json:"id"`
-	Question string `json:"questions"`
+	Question string `json:"question"`
 	Answers []string `json:"answers"`
 	Chart chart `json:"chart"`
 }

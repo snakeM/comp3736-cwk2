@@ -39,7 +39,7 @@ const INSERT_DATASET string = `
 		(
 			Data
 		)
-`
+		`
 
 // ExperimentID is just the current timestamp
 func generateExperimentID() string {
@@ -136,9 +136,9 @@ func generateDataset(c *gin.Context) {
 			},
 		}
 		areaTrial := trial{
-			Id: i,
+			Id: i+10,
 			Question: questions[0],
-			Answers: []string{"USA", "Great Britain", "Spain", "Greece"},
+			Answers: []string{"Spain", "Italy", "Greece", "Belgium"},
 			Chart: chart{
 				Labels: dates,
 				Datasets: areaDataset,
@@ -179,3 +179,4 @@ func ReadJSONFile(filePath string) (trials, error) {
 
 	return jsonData, nil
 }
+
