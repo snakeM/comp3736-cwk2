@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"math/rand"
 	"net/http"
@@ -89,8 +88,6 @@ func generateRandData(n int, seed int) []int {
 	var min int = 5 * (seed + 1)
 	var max int = 15 * (seed + 1)
 
-	fmt.Printf("min:%d, max:%d", min, max)
-
 	var randData = make([]int, n)
 	for i := 0; i < n; i++ {
 		randData[i] = generateRandNum(min, max)
@@ -103,7 +100,6 @@ func getCountrySet() []string {
 	var countries []string = []string{"USA", "Belgium", "Great Britain", "Spain", "Italy", "France", "Greece", "Japan"}
 
 	rand.Shuffle(len(countries), func(i, j int) { countries[i], countries[j] = countries[j], countries[i] })
-	fmt.Println(countries[0:4])
 	return countries[0:4]
 }
 
@@ -148,7 +144,6 @@ func generateDataset(c *gin.Context) {
 		allTrials.Trials[10+i] = areaTrial
 
 	}
-	fmt.Println(allTrials)
 	c.JSON(http.StatusOK, allTrials)
 
 }
