@@ -33,14 +33,6 @@ const INSERT_NEW_RESULT string = `
 	);
 `
 
-const INSERT_DATASET string = `
-		INSERT INTO
-			Datasets
-		(
-			Data
-		)
-		`
-
 // ExperimentID is just the current timestamp
 func generateExperimentID() string {
 		// Get the current date and time
@@ -106,10 +98,9 @@ func generateRandData(n int) []int {
 }
 
 func generateDatasets() ([]chartDataset, []chartDataset) {
-	countries := []string{"USA", "Belgium", "Great Britain", "Spain", "Italy", "France", "Greece", "Japan"}
-	lineDatasets := make([]chartDataset, len(countries))
-	areaDatasets := make([]chartDataset, len(countries))
-	for i, country := range countries {
+	lineDatasets := make([]chartDataset, len(COUNTRIES))
+	areaDatasets := make([]chartDataset, len(COUNTRIES))
+	for i, country := range COUNTRIES {
 		data := generateRandData(12)
 		lineDatasets[i] = chartDataset{Label: country, Data: data, Fill: false}
 		areaDatasets[i] = chartDataset{Label: country, Data: data, Fill: true}
@@ -118,7 +109,6 @@ func generateDatasets() ([]chartDataset, []chartDataset) {
 }
 
 func generateDataset(c *gin.Context) {
-	dates := []string{"1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"}
 	
 	var allTrials trials
 	allTrials.Trials = make([]trial, 20)
@@ -131,7 +121,7 @@ func generateDataset(c *gin.Context) {
 			Question: questions[0],
 			Answers: []string{"USA", "Great Britain", "Spain", "Greece"},
 			Chart: chart{
-				Labels: dates,
+				Labels: OLYMPIC_YEARS,
 				Datasets: lineDataset,
 			},
 		}
@@ -140,7 +130,7 @@ func generateDataset(c *gin.Context) {
 			Question: questions[0],
 			Answers: []string{"Spain", "Italy", "Greece", "Belgium"},
 			Chart: chart{
-				Labels: dates,
+				Labels: OLYMPIC_YEARS,
 				Datasets: areaDataset,
 			},
 		}
