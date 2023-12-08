@@ -85,9 +85,11 @@ func generateRandNum(min int, max int) int {
 	return rand.Intn(max-min) + min
 }
 
-func generateRandData(n int) []int {
-	max := 50
-	min := 20
+func generateRandData(n int, seed int) []int {
+	var min int = 5 * (seed + 1)
+	var max int = 15 * (seed + 1)
+
+	fmt.Printf("min:%d, max:%d", min, max)
 
 	var randData = make([]int, n)
 	for i := 0; i < n; i++ {
@@ -97,11 +99,20 @@ func generateRandData(n int) []int {
 	return randData
 }
 
+func getCountrySet() []string {
+	var countries []string = []string{"USA", "Belgium", "Great Britain", "Spain", "Italy", "France", "Greece", "Japan"}
+
+	rand.Shuffle(len(countries), func(i, j int) { countries[i], countries[j] = countries[j], countries[i] })
+	fmt.Println(countries[0:4])
+	return countries[0:4]
+}
+
 func generateDatasets() ([]chartDataset, []chartDataset) {
-	lineDatasets := make([]chartDataset, len(COUNTRIES))
-	areaDatasets := make([]chartDataset, len(COUNTRIES))
-	for i, country := range COUNTRIES {
-		data := generateRandData(12)
+	countries := getCountrySet()
+	lineDatasets := make([]chartDataset, len(countries))
+	areaDatasets := make([]chartDataset, len(countries))
+	for i, country := range countries {
+		data := generateRandData(12, i)
 		lineDatasets[i] = chartDataset{Label: country, Data: data, Fill: false}
 		areaDatasets[i] = chartDataset{Label: country, Data: data, Fill: true}
 	}
@@ -112,13 +123,12 @@ func generateDataset(c *gin.Context) {
 	
 	var allTrials trials
 	allTrials.Trials = make([]trial, 20)
-	questions := []string{"Which country won the most medals in 2000"}
 	for i := 0; i < 10; i++ {
 		lineDataset, areaDataset := generateDatasets()
 
 		lineTrial := trial{
 			Id: i,
-			Question: questions[0],
+			Question: QUESTIONS[0],
 			Answers: []string{"USA", "Great Britain", "Spain", "Greece"},
 			Chart: chart{
 				Labels: OLYMPIC_YEARS,
@@ -127,7 +137,7 @@ func generateDataset(c *gin.Context) {
 		}
 		areaTrial := trial{
 			Id: i+10,
-			Question: questions[0],
+			Question: QUESTIONS[0],
 			Answers: []string{"Spain", "Italy", "Greece", "Belgium"},
 			Chart: chart{
 				Labels: OLYMPIC_YEARS,
