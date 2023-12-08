@@ -95,6 +95,7 @@ func handleResultData(c *gin.Context) {
 			return
 		}
 	}
+	c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 	c.JSON(http.StatusOK, gin.H{"message": "Successfully added results to database"})
 	
 }
