@@ -1,35 +1,15 @@
 package main
 
 import (
+	"encoding/json"
 	"log"
+	"math/rand"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/gin-gonic/gin"
 )
-
-// Result data received from front-end
-type ResultRecord struct {
-	ResultID string `json:"id"`
-	Chart string `json:"chart"`
-	TrialID string `json:"trial"`
-	TimeTaken string `json:"timeTaken"`
-	Answer string `json:"answer"`
-}
-
-type LineChart struct {
-	Label string `json:"label"`
-	Data []int `json:"data"`
-}
-
-type LineData struct {
-	Labels []string `json:"labels"`
-	Datasets []LineChart `json:"datasets"`
-}
-
-type RequestData struct {
-	Data []ResultRecord `json:"data"`
-}
 
 const INSERT_NEW_RESULT string = `
 	INSERT INTO
@@ -50,6 +30,14 @@ const INSERT_NEW_RESULT string = `
 		@p5,
 		@p6
 	);
+`
+
+const INSERT_DATASET string = `
+		INSERT INTO
+			Datasets
+		(
+			Data
+		)
 `
 
 // ExperimentID is just the current timestamp
@@ -100,31 +88,69 @@ func handleResultData(c *gin.Context) {
 	
 }
 
+func generateRandNum(min int, max int) int {
+	return rand.Intn(max-min) + min
+}
+
+func generateRandData(n int) []int {
+	max := 50
+	min := 0
+
+	var randData = make([]int, n)
+	for i := 0; i < n; i++ {
+		randData[i] = generateRandNum(min, max)
+	}
+
+
+	return randData
+}
+
+func generateRandLine() []LineChart {
+	countries := []string{"USA", "Belgium", "Great Britain", "Spain", "Italy", "France", "Greece", "Japan"}
+	datasets := make([]LineChart, len(countries))
+	for i, country := range countries {
+		datasets[i] = LineChart{Label: country, Data: generateRandData(12)}
+	}
+	return datasets
+}
+
+func generateDataset(c *gin.Context) {
+	var allLineData Charts
+
+	dateLabels := []string{"1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016"}
+	allLineData.LineCharts = make([]LineData, 10)
+	for i := 0; i < 10; i++ {
+		allLineData.LineCharts[i] = LineData{
+			Labels: dateLabels,
+			Datasets: generateRandLine(),
+		}
+	}
+	c.JSON(http.StatusOK, allLineData)
+}
+
 func getChartData(c *gin.Context) {
-	d := []int{10, 20, 11, 25, 26, 30, 9}
-	d2 := []int{20, 30, 11, 50, 32, 4, 23}
-	dateLabels := []string{"1996", "2000", "2004", "2008", "2012", "2016", "2020", "2024"}
-	lineData := LineData{
-		Labels: dateLabels,
-		Datasets: []LineChart{
-			{
-				Label: "USA",
-				Data: d,
-			},
-			{
-				Label: "UK",
-				Data: d2,
-			},
-		},
+	lineData, err := ReadJSONFile("cmd/data.json")
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"message": "Error opening data file."})
 	}
 	c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 	c.JSON(http.StatusOK, lineData)
 }
 
+func ReadJSONFile(filePath string) (Charts, error) {
+	
+	file, err := os.Open(filePath)
+	if err != nil {
+		return Charts{nil}, err
+	}
+	defer file.Close()
 
-func main() {
-	r := gin.Default()
-	r.POST("/result/new", handleResultData)
-	r.GET("/charts", getChartData)
-	r.Run()
+	var jsonData Charts
+	decoder := json.NewDecoder(file)
+	err = decoder.Decode(&jsonData)
+	if err != nil {
+		return Charts{nil}, err
+	}
+
+	return jsonData, nil
 }
