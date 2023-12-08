@@ -112,6 +112,8 @@ func generateDatasets() ([]chartDataset, []chartDataset) {
 		lineDatasets[i] = chartDataset{Label: country, Data: data, Fill: false}
 		areaDatasets[i] = chartDataset{Label: country, Data: data, Fill: true}
 	}
+	rand.Shuffle(len(lineDatasets), func(i, j int) { lineDatasets[i], lineDatasets[j] = lineDatasets[j], lineDatasets[i]})
+	rand.Shuffle(len(areaDatasets), func(i, j int) { areaDatasets[i], areaDatasets[j] = areaDatasets[j], areaDatasets[i]})
 	return lineDatasets, areaDatasets
 }
 
