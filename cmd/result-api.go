@@ -103,8 +103,7 @@ func getCountrySet() []string {
 	return countries[0:4]
 }
 
-func generateDatasets() ([]chartDataset, []chartDataset) {
-	countries := getCountrySet()
+func generateDatasets(countries []string) ([]chartDataset, []chartDataset) {
 	lineDatasets := make([]chartDataset, len(countries))
 	areaDatasets := make([]chartDataset, len(countries))
 	for i, country := range countries {
@@ -122,12 +121,15 @@ func generateDataset(c *gin.Context) {
 	var allTrials trials
 	allTrials.Trials = make([]trial, 20)
 	for i := 0; i < 10; i++ {
-		lineDataset, areaDataset := generateDatasets()
+		// Pick 4 random countries
+		countries := getCountrySet()
+		// For each country - generate a dataset object (containing a label and data)
+		lineDataset, areaDataset := generateDatasets(countries)
 
 		lineTrial := trial{
 			Id: i,
 			Question: QUESTIONS[0],
-			Answers: []string{"USA", "Great Britain", "Spain", "Greece"},
+			Answers: countries,
 			Chart: chart{
 				Labels: OLYMPIC_YEARS,
 				Datasets: lineDataset,
@@ -136,7 +138,7 @@ func generateDataset(c *gin.Context) {
 		areaTrial := trial{
 			Id: i+10,
 			Question: QUESTIONS[0],
-			Answers: []string{"Spain", "Italy", "Greece", "Belgium"},
+			Answers: countries,
 			Chart: chart{
 				Labels: OLYMPIC_YEARS,
 				Datasets: areaDataset,
