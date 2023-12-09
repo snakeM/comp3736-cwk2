@@ -2,7 +2,7 @@
   "trials": [
     {
       "id": 0,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 2008 and 2016?",
       "answers": [
         "USA",
         "Great Britain",
@@ -26,74 +26,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
+            "label": "Belgium",
             "data": [
-              10,
+              52,
+              76,
+              99,
+              97,
+              97,
+              80,
+              68,
+              78,
+              82,
+              76,
+              72,
+              96
+            ],
+            "fill": false
+          },
+          {
+            "label": "France",
+            "data": [
+              76,
+              80,
+              124,
+              133,
+              109,
+              94,
+              102,
+              125,
+              103,
+              74,
+              84,
+              84
+            ],
+            "fill": false
+          },
+          {
+            "label": "Japan",
+            "data": [
+              11,
               14,
-              13,
+              14,
+              17,
+              10,
+              10,
               11,
-              9,
-              13,
-              9,
-              5,
-              9,
-              13,
-              11,
-              10
+              14,
+              15,
+              15,
+              19,
+              16
             ],
             "fill": false
           },
           {
             "label": "Greece",
             "data": [
-              22,
-              15,
-              14,
-              20,
-              26,
-              22,
-              14,
-              11,
-              21,
-              29,
-              15,
-              29
-            ],
-            "fill": false
-          },
-          {
-            "label": "Spain",
-            "data": [
-              30,
-              21,
-              38,
-              25,
-              16,
-              37,
-              42,
-              25,
-              25,
-              30,
-              39,
-              31
-            ],
-            "fill": false
-          },
-          {
-            "label": "Belgium",
-            "data": [
-              43,
-              25,
-              59,
+              40,
+              35,
+              53,
               33,
-              39,
-              32,
-              58,
-              54,
-              22,
-              24,
+              50,
+              59,
               51,
-              28
+              42,
+              52,
+              40,
+              53,
+              37
             ],
             "fill": false
           }
@@ -102,7 +102,7 @@
     },
     {
       "id": 1,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1992 and 2000?",
       "answers": [
         "USA",
         "Great Britain",
@@ -126,74 +126,74 @@
         ],
         "datasets": [
           {
-            "label": "Japan",
+            "label": "USA",
             "data": [
-              8,
-              9,
+              17,
+              17,
+              13,
               11,
-              7,
               12,
-              6,
-              8,
               12,
-              11,
-              8,
-              9,
-              5
-            ],
-            "fill": false
-          },
-          {
-            "label": "Greece",
-            "data": [
-              18,
-              21,
-              20,
-              24,
-              26,
+              14,
+              17,
               19,
-              10,
-              14,
-              26,
-              14,
-              29,
-              27
-            ],
-            "fill": false
-          },
-          {
-            "label": "Spain",
-            "data": [
-              37,
-              31,
-              31,
-              18,
-              20,
-              30,
-              38,
-              41,
-              21,
-              37,
-              22,
-              36
+              15,
+              19,
+              15
             ],
             "fill": false
           },
           {
             "label": "Great Britain",
             "data": [
-              37,
-              36,
-              41,
-              21,
-              34,
-              49,
-              21,
-              37,
-              54,
-              47,
-              42,
-              57
+              86,
+              132,
+              115,
+              109,
+              123,
+              105,
+              75,
+              128,
+              90,
+              80,
+              123,
+              86
+            ],
+            "fill": false
+          },
+          {
+            "label": "France",
+            "data": [
+              77,
+              57,
+              65,
+              77,
+              52,
+              97,
+              60,
+              58,
+              60,
+              97,
+              65,
+              97
+            ],
+            "fill": false
+          },
+          {
+            "label": "Greece",
+            "data": [
+              59,
+              59,
+              56,
+              53,
+              55,
+              57,
+              31,
+              39,
+              40,
+              33,
+              44,
+              36
             ],
             "fill": false
           }
@@ -202,7 +202,7 @@
     },
     {
       "id": 2,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1972 and 1976?",
       "answers": [
         "USA",
         "Great Britain",
@@ -226,74 +226,74 @@
         ],
         "datasets": [
           {
-            "label": "Greece",
+            "label": "France",
             "data": [
-              5,
-              10,
-              10,
-              11,
-              11,
-              9,
-              11,
-              9,
-              9,
-              10,
-              5,
-              10
+              85,
+              89,
+              98,
+              97,
+              84,
+              108,
+              87,
+              102,
+              119,
+              102,
+              129,
+              76
             ],
             "fill": false
           },
           {
-            "label": "Italy",
+            "label": "Great Britain",
             "data": [
-              24,
-              23,
+              37,
+              36,
+              38,
+              58,
+              36,
+              34,
+              41,
+              34,
+              33,
+              32,
+              32,
+              39
+            ],
+            "fill": false
+          },
+          {
+            "label": "Spain",
+            "data": [
+              11,
+              11,
+              11,
+              15,
+              12,
+              15,
+              15,
               11,
               14,
-              15,
-              18,
-              28,
-              28,
-              27,
-              18,
-              15,
-              10
-            ],
-            "fill": false
-          },
-          {
-            "label": "Belgium",
-            "data": [
-              15,
-              30,
-              27,
-              29,
-              42,
-              42,
-              20,
-              43,
-              32,
-              15,
-              38,
-              26
+              10,
+              13,
+              14
             ],
             "fill": false
           },
           {
             "label": "USA",
             "data": [
-              57,
-              44,
-              25,
-              27,
-              21,
+              81,
+              90,
+              52,
               59,
-              21,
-              53,
+              64,
+              75,
+              61,
               58,
-              22,
-              26,
-              25
+              58,
+              66,
+              95,
+              89
             ],
             "fill": false
           }
@@ -302,7 +302,7 @@
     },
     {
       "id": 3,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country has won the most medals overall?",
       "answers": [
         "USA",
         "Great Britain",
@@ -326,74 +326,74 @@
         ],
         "datasets": [
           {
-            "label": "Belgium",
+            "label": "Greece",
             "data": [
+              15,
+              19,
+              19,
+              11,
+              17,
+              13,
+              13,
               12,
-              6,
-              13,
-              8,
-              10,
-              10,
-              6,
-              13,
-              9,
-              9,
-              14,
-              11
-            ],
-            "fill": false
-          },
-          {
-            "label": "Italy",
-            "data": [
-              21,
-              26,
-              26,
-              14,
-              11,
-              24,
-              10,
-              29,
-              28,
-              23,
-              11,
-              11
+              18,
+              12,
+              15,
+              14
             ],
             "fill": false
           },
           {
             "label": "France",
             "data": [
+              90,
+              93,
+              60,
+              75,
+              84,
+              57,
+              87,
+              65,
+              68,
+              56,
+              95,
+              73
+            ],
+            "fill": false
+          },
+          {
+            "label": "Belgium",
+            "data": [
               38,
-              21,
-              37,
-              43,
-              44,
+              35,
+              32,
+              57,
+              54,
+              58,
               39,
-              44,
-              22,
-              44,
-              38,
-              20,
-              22
+              57,
+              57,
+              54,
+              30,
+              44
             ],
             "fill": false
           },
           {
             "label": "Great Britain",
             "data": [
-              40,
-              43,
-              36,
-              57,
-              24,
-              28,
-              43,
-              46,
-              22,
-              49,
-              37,
-              30
+              115,
+              115,
+              90,
+              86,
+              120,
+              102,
+              84,
+              77,
+              93,
+              71,
+              87,
+              97
             ],
             "fill": false
           }
@@ -402,7 +402,7 @@
     },
     {
       "id": 4,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals in the 1996 Olympics?",
       "answers": [
         "USA",
         "Great Britain",
@@ -426,74 +426,74 @@
         ],
         "datasets": [
           {
-            "label": "USA",
+            "label": "Great Britain",
             "data": [
               11,
-              6,
-              9,
-              5,
+              17,
+              19,
+              16,
+              14,
               11,
-              5,
-              6,
-              14,
-              12,
-              5,
-              7,
-              13
-            ],
-            "fill": false
-          },
-          {
-            "label": "Spain",
-            "data": [
-              27,
-              28,
-              26,
-              21,
-              14,
-              25,
-              12,
+              19,
+              15,
+              11,
               11,
               16,
-              23,
-              25,
-              11
+              19
             ],
             "fill": false
           },
           {
             "label": "Greece",
             "data": [
-              30,
-              41,
-              38,
-              30,
-              33,
-              40,
-              40,
-              19,
-              40,
-              35,
-              28,
-              30
+              82,
+              110,
+              133,
+              125,
+              139,
+              98,
+              78,
+              99,
+              111,
+              75,
+              97,
+              121
             ],
             "fill": false
           },
           {
-            "label": "Japan",
+            "label": "USA",
             "data": [
-              38,
+              60,
+              83,
+              89,
+              90,
+              92,
+              64,
+              89,
+              61,
+              93,
+              90,
               53,
-              34,
-              29,
-              48,
-              25,
-              32,
-              27,
+              69
+            ],
+            "fill": false
+          },
+          {
+            "label": "Italy",
+            "data": [
+              50,
+              54,
+              37,
+              31,
               33,
-              51,
-              43,
-              24
+              37,
+              48,
+              56,
+              47,
+              49,
+              48,
+              45
             ],
             "fill": false
           }
@@ -502,7 +502,7 @@
     },
     {
       "id": 5,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 2008 and 2016?",
       "answers": [
         "USA",
         "Great Britain",
@@ -526,74 +526,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
+            "label": "France",
             "data": [
-              9,
-              14,
-              11,
-              13,
-              6,
-              14,
-              9,
-              9,
-              14,
-              9,
-              7,
-              13
+              53,
+              75,
+              57,
+              58,
+              55,
+              67,
+              57,
+              74,
+              80,
+              53,
+              99,
+              90
             ],
             "fill": false
           },
           {
-            "label": "Spain",
+            "label": "Japan",
             "data": [
-              16,
-              15,
-              19,
-              12,
+              38,
+              45,
+              37,
+              31,
+              36,
+              43,
+              41,
+              54,
+              34,
+              44,
+              49,
+              56
+            ],
+            "fill": false
+          },
+          {
+            "label": "Great Britain",
+            "data": [
               11,
-              12,
+              16,
+              14,
               15,
-              28,
-              22,
-              15,
-              27,
-              22
+              18,
+              18,
+              18,
+              18,
+              14,
+              16,
+              18,
+              14
             ],
             "fill": false
           },
           {
             "label": "Greece",
             "data": [
-              33,
-              21,
-              35,
-              22,
-              36,
-              15,
-              28,
-              18,
-              41,
-              26,
-              21,
-              35
-            ],
-            "fill": false
-          },
-          {
-            "label": "France",
-            "data": [
-              52,
-              55,
-              29,
-              29,
-              44,
-              31,
-              59,
-              27,
-              36,
-              55,
-              27,
-              22
+              79,
+              95,
+              77,
+              122,
+              114,
+              136,
+              128,
+              96,
+              132,
+              114,
+              70,
+              71
             ],
             "fill": false
           }
@@ -602,7 +602,7 @@
     },
     {
       "id": 6,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1992 and 2000?",
       "answers": [
         "USA",
         "Great Britain",
@@ -626,74 +626,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
+            "label": "Spain",
             "data": [
-              12,
-              5,
-              11,
-              10,
-              6,
-              13,
-              5,
-              7,
-              11,
-              14,
-              13,
-              13
+              129,
+              104,
+              128,
+              113,
+              73,
+              90,
+              109,
+              117,
+              133,
+              138,
+              72,
+              90
             ],
             "fill": false
           },
           {
-            "label": "Belgium",
+            "label": "Japan",
             "data": [
+              14,
               19,
-              27,
-              16,
-              13,
-              29,
-              21,
-              25,
-              22,
-              22,
-              24,
-              27,
+              12,
+              11,
+              19,
+              18,
+              18,
+              12,
+              11,
+              18,
+              15,
               12
             ],
             "fill": false
           },
           {
-            "label": "France",
+            "label": "Great Britain",
             "data": [
-              20,
-              17,
               43,
-              34,
-              26,
-              36,
+              33,
               35,
-              25,
-              42,
-              21,
-              37,
-              21
+              47,
+              31,
+              33,
+              55,
+              39,
+              30,
+              48,
+              56,
+              37
             ],
             "fill": false
           },
           {
-            "label": "Italy",
+            "label": "USA",
             "data": [
-              38,
-              29,
-              24,
-              26,
-              53,
-              54,
-              59,
-              21,
-              27,
-              35,
+              69,
+              81,
+              63,
+              82,
+              95,
+              92,
               56,
-              22
+              58,
+              88,
+              92,
+              51,
+              55
             ],
             "fill": false
           }
@@ -702,7 +702,7 @@
     },
     {
       "id": 7,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1972 and 1976?",
       "answers": [
         "USA",
         "Great Britain",
@@ -728,72 +728,72 @@
           {
             "label": "France",
             "data": [
-              10,
-              11,
-              6,
-              12,
-              13,
-              9,
-              5,
-              14,
-              12,
-              8,
-              9,
-              9
+              58,
+              52,
+              58,
+              32,
+              45,
+              43,
+              43,
+              31,
+              50,
+              59,
+              32,
+              50
+            ],
+            "fill": false
+          },
+          {
+            "label": "Spain",
+            "data": [
+              74,
+              74,
+              131,
+              92,
+              114,
+              106,
+              71,
+              118,
+              131,
+              105,
+              107,
+              110
             ],
             "fill": false
           },
           {
             "label": "USA",
             "data": [
-              29,
-              23,
-              28,
-              28,
-              25,
-              23,
-              24,
-              21,
-              21,
-              24,
-              28,
-              10
+              91,
+              63,
+              60,
+              97,
+              90,
+              93,
+              96,
+              71,
+              71,
+              79,
+              81,
+              52
             ],
             "fill": false
           },
           {
-            "label": "Belgium",
+            "label": "Japan",
             "data": [
-              43,
-              23,
-              28,
-              37,
-              40,
-              21,
-              34,
-              29,
-              24,
-              32,
-              37,
-              15
-            ],
-            "fill": false
-          },
-          {
-            "label": "Greece",
-            "data": [
-              33,
-              59,
-              44,
-              59,
-              48,
-              22,
-              25,
-              45,
-              28,
-              44,
-              36,
-              53
+              14,
+              17,
+              11,
+              11,
+              12,
+              12,
+              11,
+              14,
+              11,
+              16,
+              16,
+              14
             ],
             "fill": false
           }
@@ -802,7 +802,7 @@
     },
     {
       "id": 8,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country has won the most medals overall?",
       "answers": [
         "USA",
         "Great Britain",
@@ -828,72 +828,72 @@
           {
             "label": "Great Britain",
             "data": [
-              13,
-              8,
-              9,
-              8,
-              10,
-              10,
-              12,
-              9,
-              8,
-              13,
-              5,
-              11
+              83,
+              98,
+              86,
+              62,
+              74,
+              58,
+              92,
+              52,
+              88,
+              57,
+              64,
+              78
             ],
             "fill": false
           },
           {
-            "label": "Belgium",
+            "label": "Japan",
             "data": [
-              23,
-              16,
-              27,
-              13,
-              17,
-              19,
-              26,
-              17,
-              29,
-              23,
-              17,
-              18
+              40,
+              45,
+              30,
+              39,
+              32,
+              52,
+              42,
+              54,
+              59,
+              33,
+              35,
+              41
+            ],
+            "fill": false
+          },
+          {
+            "label": "Greece",
+            "data": [
+              80,
+              120,
+              93,
+              82,
+              86,
+              132,
+              104,
+              112,
+              110,
+              127,
+              112,
+              118
             ],
             "fill": false
           },
           {
             "label": "USA",
             "data": [
-              28,
+              11,
+              11,
+              12,
+              14,
+              13,
               16,
-              42,
-              22,
-              32,
-              31,
-              19,
-              15,
-              26,
-              25,
-              20,
-              24
-            ],
-            "fill": false
-          },
-          {
-            "label": "Italy",
-            "data": [
-              40,
-              35,
-              35,
-              38,
-              50,
-              40,
-              48,
-              28,
-              28,
-              23,
-              28,
-              22
+              18,
+              18,
+              12,
+              14,
+              13,
+              13
             ],
             "fill": false
           }
@@ -902,7 +902,7 @@
     },
     {
       "id": 9,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals in the 1996 Olympics?",
       "answers": [
         "USA",
         "Great Britain",
@@ -926,74 +926,74 @@
         ],
         "datasets": [
           {
+            "label": "Greece",
+            "data": [
+              81,
+              66,
+              87,
+              62,
+              86,
+              57,
+              63,
+              75,
+              65,
+              54,
+              84,
+              68
+            ],
+            "fill": false
+          },
+          {
+            "label": "Italy",
+            "data": [
+              11,
+              18,
+              19,
+              16,
+              18,
+              10,
+              14,
+              19,
+              19,
+              14,
+              18,
+              13
+            ],
+            "fill": false
+          },
+          {
+            "label": "Japan",
+            "data": [
+              132,
+              111,
+              113,
+              105,
+              128,
+              135,
+              84,
+              128,
+              101,
+              75,
+              110,
+              126
+            ],
+            "fill": false
+          },
+          {
             "label": "USA",
             "data": [
-              9,
-              6,
-              11,
-              11,
-              11,
-              6,
-              14,
-              14,
-              10,
-              11,
-              11,
-              10
-            ],
-            "fill": false
-          },
-          {
-            "label": "Spain",
-            "data": [
-              13,
-              11,
-              15,
-              19,
-              24,
-              28,
-              10,
-              27,
-              23,
-              18,
-              26,
-              15
-            ],
-            "fill": false
-          },
-          {
-            "label": "France",
-            "data": [
-              34,
-              30,
-              44,
-              28,
-              35,
-              30,
-              37,
-              33,
-              20,
-              24,
-              37,
-              23
-            ],
-            "fill": false
-          },
-          {
-            "label": "Great Britain",
-            "data": [
-              29,
-              33,
-              45,
-              27,
-              20,
+              40,
+              40,
               59,
-              32,
-              34,
-              31,
-              36,
-              45,
-              24
+              53,
+              39,
+              44,
+              48,
+              46,
+              35,
+              58,
+              54,
+              45
             ],
             "fill": false
           }
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 10,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 2008 and 2016?",
       "answers": [
         "Spain",
         "Italy",
@@ -1026,74 +1026,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
+            "label": "France",
             "data": [
-              10,
-              14,
-              13,
-              11,
-              9,
-              13,
-              9,
-              5,
-              9,
-              13,
-              11,
-              10
-            ],
-            "fill": true
-          },
-          {
-            "label": "Greece",
-            "data": [
-              22,
-              15,
-              14,
-              20,
-              26,
-              22,
-              14,
-              11,
-              21,
-              29,
-              15,
-              29
-            ],
-            "fill": true
-          },
-          {
-            "label": "Spain",
-            "data": [
-              30,
-              21,
-              38,
-              25,
-              16,
-              37,
-              42,
-              25,
-              25,
-              30,
-              39,
-              31
+              76,
+              80,
+              124,
+              133,
+              109,
+              94,
+              102,
+              125,
+              103,
+              74,
+              84,
+              84
             ],
             "fill": true
           },
           {
             "label": "Belgium",
             "data": [
-              43,
-              25,
-              59,
+              52,
+              76,
+              99,
+              97,
+              97,
+              80,
+              68,
+              78,
+              82,
+              76,
+              72,
+              96
+            ],
+            "fill": true
+          },
+          {
+            "label": "Japan",
+            "data": [
+              11,
+              14,
+              14,
+              17,
+              10,
+              10,
+              11,
+              14,
+              15,
+              15,
+              19,
+              16
+            ],
+            "fill": true
+          },
+          {
+            "label": "Greece",
+            "data": [
+              40,
+              35,
+              53,
               33,
-              39,
-              32,
-              58,
-              54,
-              22,
-              24,
+              50,
+              59,
               51,
-              28
+              42,
+              52,
+              40,
+              53,
+              37
             ],
             "fill": true
           }
@@ -1102,7 +1102,7 @@
     },
     {
       "id": 11,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question":  "Which country won the most medals between 1992 and 2000?",
       "answers": [
         "Spain",
         "Italy",
@@ -1126,74 +1126,74 @@
         ],
         "datasets": [
           {
-            "label": "Japan",
+            "label": "USA",
             "data": [
-              8,
-              9,
+              17,
+              17,
+              13,
               11,
-              7,
               12,
-              6,
-              8,
               12,
-              11,
-              8,
-              9,
-              5
-            ],
-            "fill": true
-          },
-          {
-            "label": "Greece",
-            "data": [
-              18,
-              21,
-              20,
-              24,
-              26,
+              14,
+              17,
               19,
-              10,
-              14,
-              26,
-              14,
-              29,
-              27
+              15,
+              19,
+              15
             ],
             "fill": true
           },
           {
-            "label": "Spain",
+            "label": "France",
             "data": [
-              37,
-              31,
-              31,
-              18,
-              20,
-              30,
-              38,
-              41,
-              21,
-              37,
-              22,
-              36
+              77,
+              57,
+              65,
+              77,
+              52,
+              97,
+              60,
+              58,
+              60,
+              97,
+              65,
+              97
             ],
             "fill": true
           },
           {
             "label": "Great Britain",
             "data": [
-              37,
-              36,
-              41,
-              21,
-              34,
-              49,
-              21,
-              37,
-              54,
-              47,
-              42,
-              57
+              86,
+              132,
+              115,
+              109,
+              123,
+              105,
+              75,
+              128,
+              90,
+              80,
+              123,
+              86
+            ],
+            "fill": true
+          },
+          {
+            "label": "Greece",
+            "data": [
+              59,
+              59,
+              56,
+              53,
+              55,
+              57,
+              31,
+              39,
+              40,
+              33,
+              44,
+              36
             ],
             "fill": true
           }
@@ -1202,7 +1202,7 @@
     },
     {
       "id": 12,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1972 and 1976?",
       "answers": [
         "Spain",
         "Italy",
@@ -1226,74 +1226,74 @@
         ],
         "datasets": [
           {
-            "label": "Greece",
+            "label": "Great Britain",
             "data": [
-              5,
-              10,
-              10,
-              11,
-              11,
-              9,
-              11,
-              9,
-              9,
-              10,
-              5,
-              10
-            ],
-            "fill": true
-          },
-          {
-            "label": "Italy",
-            "data": [
-              24,
-              23,
-              11,
-              14,
-              15,
-              18,
-              28,
-              28,
-              27,
-              18,
-              15,
-              10
-            ],
-            "fill": true
-          },
-          {
-            "label": "Belgium",
-            "data": [
-              15,
-              30,
-              27,
-              29,
-              42,
-              42,
-              20,
-              43,
-              32,
-              15,
+              37,
+              36,
               38,
-              26
+              58,
+              36,
+              34,
+              41,
+              34,
+              33,
+              32,
+              32,
+              39
+            ],
+            "fill": true
+          },
+          {
+            "label": "France",
+            "data": [
+              85,
+              89,
+              98,
+              97,
+              84,
+              108,
+              87,
+              102,
+              119,
+              102,
+              129,
+              76
             ],
             "fill": true
           },
           {
             "label": "USA",
             "data": [
-              57,
-              44,
-              25,
-              27,
-              21,
+              81,
+              90,
+              52,
               59,
-              21,
-              53,
+              64,
+              75,
+              61,
               58,
-              22,
-              26,
-              25
+              58,
+              66,
+              95,
+              89
+            ],
+            "fill": true
+          },
+          {
+            "label": "Spain",
+            "data": [
+              11,
+              11,
+              11,
+              15,
+              12,
+              15,
+              15,
+              11,
+              14,
+              10,
+              13,
+              14
             ],
             "fill": true
           }
@@ -1302,7 +1302,7 @@
     },
     {
       "id": 13,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country has won the most medals overall?",
       "answers": [
         "Spain",
         "Italy",
@@ -1326,74 +1326,74 @@
         ],
         "datasets": [
           {
-            "label": "Belgium",
+            "label": "Greece",
             "data": [
+              15,
+              19,
+              19,
+              11,
+              17,
+              13,
+              13,
               12,
-              6,
-              13,
-              8,
-              10,
-              10,
-              6,
-              13,
-              9,
-              9,
-              14,
-              11
-            ],
-            "fill": true
-          },
-          {
-            "label": "Italy",
-            "data": [
-              21,
-              26,
-              26,
-              14,
-              11,
-              24,
-              10,
-              29,
-              28,
-              23,
-              11,
-              11
-            ],
-            "fill": true
-          },
-          {
-            "label": "France",
-            "data": [
-              38,
-              21,
-              37,
-              43,
-              44,
-              39,
-              44,
-              22,
-              44,
-              38,
-              20,
-              22
+              18,
+              12,
+              15,
+              14
             ],
             "fill": true
           },
           {
             "label": "Great Britain",
             "data": [
-              40,
-              43,
-              36,
+              115,
+              115,
+              90,
+              86,
+              120,
+              102,
+              84,
+              77,
+              93,
+              71,
+              87,
+              97
+            ],
+            "fill": true
+          },
+          {
+            "label": "Belgium",
+            "data": [
+              38,
+              35,
+              32,
               57,
-              24,
-              28,
-              43,
-              46,
-              22,
-              49,
-              37,
-              30
+              54,
+              58,
+              39,
+              57,
+              57,
+              54,
+              30,
+              44
+            ],
+            "fill": true
+          },
+          {
+            "label": "France",
+            "data": [
+              90,
+              93,
+              60,
+              75,
+              84,
+              57,
+              87,
+              65,
+              68,
+              56,
+              95,
+              73
             ],
             "fill": true
           }
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 14,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals in the 1996 Olympics?",
       "answers": [
         "Spain",
         "Italy",
@@ -1426,74 +1426,74 @@
         ],
         "datasets": [
           {
-            "label": "USA",
+            "label": "Italy",
             "data": [
-              11,
-              6,
-              9,
-              5,
-              11,
-              5,
-              6,
-              14,
-              12,
-              5,
-              7,
-              13
+              50,
+              54,
+              37,
+              31,
+              33,
+              37,
+              48,
+              56,
+              47,
+              49,
+              48,
+              45
             ],
             "fill": true
           },
           {
-            "label": "Spain",
+            "label": "USA",
             "data": [
-              27,
-              28,
-              26,
-              21,
+              60,
+              83,
+              89,
+              90,
+              92,
+              64,
+              89,
+              61,
+              93,
+              90,
+              53,
+              69
+            ],
+            "fill": true
+          },
+          {
+            "label": "Great Britain",
+            "data": [
+              11,
+              17,
+              19,
+              16,
               14,
-              25,
-              12,
+              11,
+              19,
+              15,
+              11,
               11,
               16,
-              23,
-              25,
-              11
+              19
             ],
             "fill": true
           },
           {
             "label": "Greece",
             "data": [
-              30,
-              41,
-              38,
-              30,
-              33,
-              40,
-              40,
-              19,
-              40,
-              35,
-              28,
-              30
-            ],
-            "fill": true
-          },
-          {
-            "label": "Japan",
-            "data": [
-              38,
-              53,
-              34,
-              29,
-              48,
-              25,
-              32,
-              27,
-              33,
-              51,
-              43,
-              24
+              82,
+              110,
+              133,
+              125,
+              139,
+              98,
+              78,
+              99,
+              111,
+              75,
+              97,
+              121
             ],
             "fill": true
           }
@@ -1502,7 +1502,7 @@
     },
     {
       "id": 15,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 2008 and 2016?",
       "answers": [
         "Spain",
         "Italy",
@@ -1526,74 +1526,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
-            "data": [
-              9,
-              14,
-              11,
-              13,
-              6,
-              14,
-              9,
-              9,
-              14,
-              9,
-              7,
-              13
-            ],
-            "fill": true
-          },
-          {
-            "label": "Spain",
-            "data": [
-              16,
-              15,
-              19,
-              12,
-              11,
-              12,
-              15,
-              28,
-              22,
-              15,
-              27,
-              22
-            ],
-            "fill": true
-          },
-          {
             "label": "Greece",
             "data": [
-              33,
-              21,
-              35,
-              22,
-              36,
+              79,
+              95,
+              77,
+              122,
+              114,
+              136,
+              128,
+              96,
+              132,
+              114,
+              70,
+              71
+            ],
+            "fill": true
+          },
+          {
+            "label": "Great Britain",
+            "data": [
+              11,
+              16,
+              14,
               15,
-              28,
               18,
-              41,
-              26,
-              21,
-              35
+              18,
+              18,
+              18,
+              14,
+              16,
+              18,
+              14
             ],
             "fill": true
           },
           {
             "label": "France",
             "data": [
-              52,
+              53,
+              75,
+              57,
+              58,
               55,
-              29,
-              29,
-              44,
+              67,
+              57,
+              74,
+              80,
+              53,
+              99,
+              90
+            ],
+            "fill": true
+          },
+          {
+            "label": "Japan",
+            "data": [
+              38,
+              45,
+              37,
               31,
-              59,
-              27,
               36,
-              55,
-              27,
-              22
+              43,
+              41,
+              54,
+              34,
+              44,
+              49,
+              56
             ],
             "fill": true
           }
@@ -1602,7 +1602,7 @@
     },
     {
       "id": 16,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1992 and 2000?",
       "answers": [
         "Spain",
         "Italy",
@@ -1626,74 +1626,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
+            "label": "Spain",
             "data": [
-              12,
-              5,
-              11,
-              10,
-              6,
-              13,
-              5,
-              7,
-              11,
-              14,
-              13,
-              13
+              129,
+              104,
+              128,
+              113,
+              73,
+              90,
+              109,
+              117,
+              133,
+              138,
+              72,
+              90
             ],
             "fill": true
           },
           {
-            "label": "Belgium",
+            "label": "USA",
             "data": [
+              69,
+              81,
+              63,
+              82,
+              95,
+              92,
+              56,
+              58,
+              88,
+              92,
+              51,
+              55
+            ],
+            "fill": true
+          },
+          {
+            "label": "Japan",
+            "data": [
+              14,
               19,
-              27,
-              16,
-              13,
-              29,
-              21,
-              25,
-              22,
-              22,
-              24,
-              27,
+              12,
+              11,
+              19,
+              18,
+              18,
+              12,
+              11,
+              18,
+              15,
               12
             ],
             "fill": true
           },
           {
-            "label": "France",
+            "label": "Great Britain",
             "data": [
-              20,
-              17,
               43,
-              34,
-              26,
-              36,
+              33,
               35,
-              25,
-              42,
-              21,
-              37,
-              21
-            ],
-            "fill": true
-          },
-          {
-            "label": "Italy",
-            "data": [
-              38,
-              29,
-              24,
-              26,
-              53,
-              54,
-              59,
-              21,
-              27,
-              35,
+              47,
+              31,
+              33,
+              55,
+              39,
+              30,
+              48,
               56,
-              22
+              37
             ],
             "fill": true
           }
@@ -1702,7 +1702,7 @@
     },
     {
       "id": 17,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals between 1972 and 1976?",
       "answers": [
         "Spain",
         "Italy",
@@ -1726,74 +1726,74 @@
         ],
         "datasets": [
           {
-            "label": "France",
-            "data": [
-              10,
-              11,
-              6,
-              12,
-              13,
-              9,
-              5,
-              14,
-              12,
-              8,
-              9,
-              9
-            ],
-            "fill": true
-          },
-          {
             "label": "USA",
             "data": [
-              29,
-              23,
-              28,
-              28,
-              25,
-              23,
-              24,
-              21,
-              21,
-              24,
-              28,
-              10
+              91,
+              63,
+              60,
+              97,
+              90,
+              93,
+              96,
+              71,
+              71,
+              79,
+              81,
+              52
             ],
             "fill": true
           },
           {
-            "label": "Belgium",
+            "label": "Spain",
             "data": [
-              43,
-              23,
-              28,
-              37,
-              40,
-              21,
-              34,
-              29,
-              24,
+              74,
+              74,
+              131,
+              92,
+              114,
+              106,
+              71,
+              118,
+              131,
+              105,
+              107,
+              110
+            ],
+            "fill": true
+          },
+          {
+            "label": "France",
+            "data": [
+              58,
+              52,
+              58,
               32,
-              37,
-              15
+              45,
+              43,
+              43,
+              31,
+              50,
+              59,
+              32,
+              50
             ],
             "fill": true
           },
           {
-            "label": "Greece",
+            "label": "Japan",
             "data": [
-              33,
-              59,
-              44,
-              59,
-              48,
-              22,
-              25,
-              45,
-              28,
-              44,
-              36,
-              53
+              14,
+              17,
+              11,
+              11,
+              12,
+              12,
+              11,
+              14,
+              11,
+              16,
+              16,
+              14
             ],
             "fill": true
           }
@@ -1802,7 +1802,7 @@
     },
     {
       "id": 18,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country has won the most medals overall?",
       "answers": [
         "Spain",
         "Italy",
@@ -1826,74 +1826,74 @@
         ],
         "datasets": [
           {
-            "label": "Great Britain",
+            "label": "Greece",
             "data": [
-              13,
-              8,
-              9,
-              8,
-              10,
-              10,
-              12,
-              9,
-              8,
-              13,
-              5,
-              11
+              80,
+              120,
+              93,
+              82,
+              86,
+              132,
+              104,
+              112,
+              110,
+              127,
+              112,
+              118
             ],
             "fill": true
           },
           {
-            "label": "Belgium",
+            "label": "Japan",
             "data": [
-              23,
-              16,
-              27,
-              13,
-              17,
-              19,
-              26,
-              17,
-              29,
-              23,
-              17,
-              18
+              40,
+              45,
+              30,
+              39,
+              32,
+              52,
+              42,
+              54,
+              59,
+              33,
+              35,
+              41
             ],
             "fill": true
           },
           {
             "label": "USA",
             "data": [
-              28,
+              11,
+              11,
+              12,
+              14,
+              13,
               16,
-              42,
-              22,
-              32,
-              31,
-              19,
-              15,
-              26,
-              25,
-              20,
-              24
+              18,
+              18,
+              12,
+              14,
+              13,
+              13
             ],
             "fill": true
           },
           {
-            "label": "Italy",
+            "label": "Great Britain",
             "data": [
-              40,
-              35,
-              35,
-              38,
-              50,
-              40,
-              48,
-              28,
-              28,
-              23,
-              28,
-              22
+              83,
+              98,
+              86,
+              62,
+              74,
+              58,
+              92,
+              52,
+              88,
+              57,
+              64,
+              78
             ],
             "fill": true
           }
@@ -1902,7 +1902,7 @@
     },
     {
       "id": 19,
-      "question": "Which country won the most medals between 1988 and 2000",
+      "question": "Which country won the most medals in the 1996 Olympics?",
       "answers": [
         "Spain",
         "Italy",
@@ -1926,74 +1926,74 @@
         ],
         "datasets": [
           {
+            "label": "Italy",
+            "data": [
+              11,
+              18,
+              19,
+              16,
+              18,
+              10,
+              14,
+              19,
+              19,
+              14,
+              18,
+              13
+            ],
+            "fill": true
+          },
+          {
             "label": "USA",
             "data": [
-              9,
-              6,
-              11,
-              11,
-              11,
-              6,
-              14,
-              14,
-              10,
-              11,
-              11,
-              10
-            ],
-            "fill": true
-          },
-          {
-            "label": "Spain",
-            "data": [
-              13,
-              11,
-              15,
-              19,
-              24,
-              28,
-              10,
-              27,
-              23,
-              18,
-              26,
-              15
-            ],
-            "fill": true
-          },
-          {
-            "label": "France",
-            "data": [
-              34,
-              30,
-              44,
-              28,
-              35,
-              30,
-              37,
-              33,
-              20,
-              24,
-              37,
-              23
-            ],
-            "fill": true
-          },
-          {
-            "label": "Great Britain",
-            "data": [
-              29,
-              33,
-              45,
-              27,
-              20,
+              40,
+              40,
               59,
-              32,
-              34,
-              31,
-              36,
-              45,
-              24
+              53,
+              39,
+              44,
+              48,
+              46,
+              35,
+              58,
+              54,
+              45
+            ],
+            "fill": true
+          },
+          {
+            "label": "Greece",
+            "data": [
+              81,
+              66,
+              87,
+              62,
+              86,
+              57,
+              63,
+              75,
+              65,
+              54,
+              84,
+              68
+            ],
+            "fill": true
+          },
+          {
+            "label": "Japan",
+            "data": [
+              132,
+              111,
+              113,
+              105,
+              128,
+              135,
+              84,
+              128,
+              101,
+              75,
+              110,
+              126
             ],
             "fill": true
           }
